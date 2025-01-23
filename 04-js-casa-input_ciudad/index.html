@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS-Tarea 4</title>
+</head>
+
+<body>
+  <h1>04 - JS - Ejercicios en casa</h1>
+  <input id="city" type="text" placeholder="Ingresa tu ciudad">
+  <br>
+  <input id="country" type="text" placeholder="Ingresa tu país">
+  <br>
+
+
+  <button onclick="det()">Detalles</button>
+  <br>
+
+  <p id="myp1"></p>
+  <p id="myp2"></p>
+
+
+  <!-- <script src="script.js"></script> -->
+
+  <script>
+    function det() {
+      let country = document.getElementById("country").value
+      let city = document.getElementById("city").value
+
+      alert(`Ciudad: ${city}  \nPaís: ${country}`);
+
+      document.getElementById("myp1").innerHTML = `Ciudad: ${city}`;
+      document.getElementById("myp2").innerHTML = `País: ${country}`
+
+    }
+  </script>
+
+
+</body>
+
+</html>

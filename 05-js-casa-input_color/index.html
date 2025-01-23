@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS-Tarea 5</title>
+</head>
+
+<body>
+  <h1>05 - JS - Ejercicios en casa</h1>
+  <h3>Elige un color</h3>
+
+  <input type="color" id="color">
+  <br><br>
+  <button onclick="pintar()">Pintar Fondo</button>
+  <br>
+
+  <!-- <script src="script.js"></script> -->
+
+  <script>
+    function pintar() {
+      let color = document.getElementById("color").value
+      document.body.style.backgroundColor = color
+    }
+
+  </script>
+</body>
+
+</html>
